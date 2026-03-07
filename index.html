@@ -1,45 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Todo App</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="app">
-    <header class="header">
-      <h1>Todo</h1>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <h1>Todo</h1>
+      </header>
 
-    <section class="add-todo">
-      <input
-        type="text"
-        id="new-todo-input"
-        class="new-todo-input"
-        placeholder="What needs to be done?"
-        autocomplete="off"
-      />
-      <button type="button" id="add-todo-btn" class="add-todo-btn">Add</button>
-    </section>
+      <section class="add-todo">
+        <input
+          type="text"
+          id="new-todo-input"
+          class="new-todo-input"
+          placeholder="What needs to be done?"
+          autocomplete="off"
+        />
+        <button type="button" id="add-todo-btn" class="add-todo-btn">
+          Add
+        </button>
+      </section>
 
-    <!-- <section class="filters">
-      <button type="button" class="filter-tab active" data-filter="all">
-        All <span class="filter-count" id="count-all">3</span>
-      </button>
-      <button type="button" class="filter-tab" data-filter="active">
-        Active <span class="filter-count" id="count-active">2</span>
-      </button>
-      <button type="button" class="filter-tab" data-filter="done">
-        Done <span class="filter-count" id="count-done">1</span>
-      </button>
-    </section> -->
+      <ul class="todo-list" id="todo-list"></ul>
 
-    <ul class="todo-list" id="todo-list"></ul>
+      <p class="empty-state" id="empty-state" hidden>
+        No todos yet. Add one above!
+      </p>
+    </div>
 
-    <p class="empty-state" id="empty-state" hidden>No todos yet. Add one above!</p>
-  </div>
-
-  <script src="index.js"></script>
-</body>
+    <script src="index.js"></script>
+  </body>
 </html>
